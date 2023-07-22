@@ -6,3 +6,4 @@
 * Compatible with all mobile devices and with a beautiful and pleasant user interface.
   
 ***
+![screem](https://github.com/NaDiaCodin/restaurant/edit/main/README.md#:~:text=Screen,jpg)
