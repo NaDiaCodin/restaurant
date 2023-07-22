@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav_logo">
+				<img src="fan.png" alt="logo image">
+				Sushi
+			</a>
+
+			<div class="nav_menu" id="nav-menu">
+				<ul class="nav_list">
+
+					<li class="nav_item">
+						<a href="#home" class="nav_link active-link">Home</a>
+					</li>
+
+					<li class="nav_item">
+						<a href="#about" class="nav_link">About us</a>
+					</li>
+
+					<li class="nav_item">
+						<a href="#popular" class="nav_link">Popular</a>
+					</li>
+
+					<li class="nav_item">
+						<a href="#recently" class="nav_link">Recently</a>
+					</li>
+				</ul>
+
+				<div class="nav_close" id="nav-close">
+					<!-- close button -->
+					<i class="ri-close-line"></i>
+				</div>
+
+				<img src="leaf-branch-4.png" alt="nav image" class="nav_img-1">
+				<img src="leaf-branch-3.png" alt="nav image" class="nav_img-2">
+			</div>
+
+			<div class="nav_buttons">
+			<!-- theme change button -->
+				<i class="ri-moon-line change-theme" id="theme-button"></i>
+			<!-- toggle button -->
+				<div class="nav_toggle" id="nav-toggle">
+					<i class="ri-apps-2-line"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+   
+	<main class="l-main">
+		<!--========== HOME ==========-->
+		<section class="home" id="home">
+			<div class="home_container container grid">
+				<img src="sushi.png" alt="home imgage" class="home_img">
+
+				<div class="home_data">
+					<h1 class="home_title">Enjoy Delicious
+						<div>
+						<img src="su2.png" alt="home imgage">
+						Sushi
+						</div>
+					</h1>
+					
+					<p class="home_description">
+						Lorem ipsum dolor sit adipisicing elit. 
+						Veniam dicta, sunt optio, ducimus tempore commodi odio!
+					</p>
+
+               <a href="#" class="button">
+                  Order Now <i class="ri-arrow-right-line"></i>
+               </a>
+				</div>
+			</div>
+
+         <img src="leaf-branch-2.png" alt="home image" class="home_leaf-1">
+         <img src="leaf-branch-4.png" alt="home image" class="home_leaf-2">
+		</section>
+
+      <!-- =============== ABOUT =============== -->
+      <section class="about section" id="about">
+         <div class="about_container container grid">
+            <div class="about_data">
+               <span class="section_subtitle">About Us</span>
+               <h2 class="section_title about_title">
+                  <div>
+                  We Provide
+                     <img src="su4.png" alt="about image">
+                  </div>
+                  Healthy Food
+               </h2>
+
+               <p class="about_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Ducimus adipisci pariatur esse laborum sapiente ea eius molestias itaque, vel sed modi ipsum accusamus.
+                  Dicta aperiam id ab quae reprehenderit asperiores.
+               </p>
+            </div>
+
+            <img src="su3.png" alt="about image" class="about_image">
+         </div>
+
+         <img src="leaf-branch-1.png" alt="about image" class="about_leaf">
+      </section>
+
+      <!-- =============== POPULAR =============== -->
+      <section class="popular section" id="popular">
+         <span class="section_subtitle">The Best Food</span>
+         <h2 class="section_title">Popular Dishes</h2>
+
+         <div class="popular_container grid">
+            <article class="popular_card">
+               <img src="popular-onigiri.png" alt="popular image" class="popular_img">
+
+               <h3 class="popular_name">Onigiri</h3>
+               <span class="popular_description">Japanese Dish</span>
+               <span class="popular_price">$14.00</span>
+
+               <button class="popular_button">
+                  <i class="ri-shopping-bag-line"></i>
+               </button>
+            </article>
+
+            <article class="popular_card">
+               <img src="popular-spring-rols.png" alt="popular image" class="popular_img">
+
+               <h3 class="popular_name">Spring Rolls</h3>
+               <span class="popular_description">Japanese Dish</span>
+               <span class="popular_price">$16.00</span>
+
+               <button class="popular_button">
+                  <i class="ri-shopping-bag-line"></i>
+               </button>
+            </article>
+
+            <article class="popular_card">
+               <img src="popular-sushi-rolls.png" alt="popular image" class="popular_img">
+
+               <h3 class="popular_name">Sushi Rolls</h3>
+               <span class="popular_description">Japanese Dish</span>
+               <span class="popular_price">$21.00</span>
+
+               <button class="popular_button">
+                  <i class="ri-shopping-bag-line"></i>
+               </button>
+            </article>
+         </div>
+      </section>
+
+      <!-- =============== RECENTLY =============== -->
+      <section class="recently section" id="recently">
+         <div class="recently_container container grid">
+            <div class="recently_data">
+               <span class="section_subtitle">Recently Added</span>
+               <h2 class="section_title">
+                  Sushi Samurai <br>
+                  Salmon Cheese
+               </h2>
+               <p class="recently_description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Libero tenetur pariatur reiciendis, minima temporibus 
+                  fuga nemo dolorum eveniet laudantium.
+               </p>
+
+               <a href="#" class="button">
+                  Order Now <i class="ri-arrow-right-line"></i>
+               </a>
+            </div>
+
+            <img src="recently-salmon.png" alt="recently image" class="recently_img">
+         </div>
+
+         <img src="leaf-branch-2.png" alt="recently image" class="recently_leaf-1">
+         <img src="leaf-branch-3.png" alt="recently image" class="recently_leaf-2">
+      </section>
+      
+      <!--==================== NEWSLETTER ====================-->
+      <section class="newsletter section">
+         <div class="newsletter_container container">
+            <div class="newsletter_content grid">
+               <img src="su6.png" alt="newsletter image" class="newsletter_img">
+
+               <div class="newsletter_data">
+                  <span class="section_subtitle">Newsletter</span>
+                  <h2 class="section_title">
+                     Subscribe For <br>
+                     Offer Updates
+                  </h2>
+
+                  <form action="" class="newsletter_form">
+                     <input type="email" placeholder="Enter email" class="newsletter_input">
+                     <button class="button newsletter_button">
+                        Subscribe <i class="ri-send-plane-line"></i>
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer_container grid">
+         <div>
+            <a href="#" class="footer_logo">
+               <img src="fan.png" alt="logo image">
+               Sushi
+            </a>
+            <p class="footer_description">
+               Lorem ipsum dolor sit amet <br>
+               consectetur adipisicing elit dolor sit. <br>
+               Consequatur, nulla doloremque consectetur adipisicing elit.
+            </p>
+         </div>
+         
+         <div class="footer_content">
+            <div>
+               <h3 class="footer_title">Main Menu</h3>
+               
+               <ul class="footer_links">
+                  <li>
+                     <a href="#" class="footer_link">About</a>
+                  </li>
+                  
+                  <li>
+                     <a href="#" class="footer_link">Menus</a>
+                  </li>
+                  
+                  <li>
+                     <a href="#" class="footer_link">Offer</a>
+                  </li>
+                  
+                  <li>
+                     <a href="#" class="footer_link">Events</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="footer_title">Information</h3>
+
+               <ul class="footer_links">
+                  <li>
+                     <a href="#" class="footer_link">Contact</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer_link">Order & Returns</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer_link">Videos</a>
+                  </li>
+                  
+                  <li>
+                     <a href="#" class="footer_link">Reservation</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="footer_title">Address</h3>
+
+               <ul class="footer_links">
+                  <li class="footer_information">
+                     Av. Alexandria 1234 <br>
+                     Florida 4321, USA
+                  </li>
+
+                  <li class="footer_information">
+                     9:00am - 11:00pm
+                  </li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="footer_title">Social Media</h3>
+               
+               <ul class="footer_social">
+                     <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-instagram-fill"></i>
+                     </a>
+
+                     <a href="https://www.twitter.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-twitter-fill"></i>
+                     </a>
+                  </ul>
+            </div>
+          </div>
+         <img src="leaf-branch-2.png" alt="footer image" class="footer_leaf-1">
+         <img src="leaf-branch-3.png" alt="footer image" class="footer_leaf-2">
+         <img src="leaf-branch-4.png" alt="footer image" class="footer_leaf-3">
+      </div>
+
+      <div class="footer_info container">
+         <div class="footer_card">
+            <img src="footer-card-1.png" alt="footer image">
+            <img src="footer-card-2.png" alt="footer image">
+            <img src="footer-card-3.png" alt="footer image">
+            <img src="footer-card-4.png" alt="footer image">
+         </div>
+      </div>
+   </footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+   <i class="ri-arrow-up-line"></i>
+</a>
+
+<!--=============== SCROLLREVEAL ===============-->
+   <script src=""></script>
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+	<script src="index.js"></script>
+   
+</body>
+</html>
