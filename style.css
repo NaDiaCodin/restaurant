@@ -1,8 +1,5 @@
 :root {
     --header-height: 3.5rem;
-
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(19, 64%, 54%);
     --first-color-alt: hsl(19, 64%, 52%);
     --title-color: #000;
@@ -25,7 +22,7 @@ body{
     font-size: 0.938rem;
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: background .4s; /*for dark mode animation*/
+    transition: background .4s;
 }
 h1, h2, h3{
     color: var(--title-color);
@@ -42,7 +39,6 @@ img{
     height: auto;
 }
 
-/*=============== THEME ===============*/
 .nav_buttons{
     display: flex;
     align-items: center;
@@ -54,7 +50,7 @@ img{
     cursor: pointer;
     transition: color .3s;
 }
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme{
     --first-color: hsl(19, 64%, 58%);
     --first-color-alt: hsl(19, 64%, 54%);
@@ -63,8 +59,6 @@ body.dark-theme{
     --body-color: #171412;
     --container-color: hsl(19, 10%, 10%);
 }
-
-/*====== Color changes in some parts of the website, in light theme =======*/
 
 .dark-theme .bg-header,
 .dark-theme .nav_menu,
@@ -132,7 +126,7 @@ body.dark-theme{
 .dark-theme .footer_link{
     color: #958983;
 }
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container{
     max-width: 1024px;
     margin-inline: 1.5rem;
@@ -161,12 +155,10 @@ body.dark-theme{
     text-align: center;
 }
 
-/* for animation scroll reveal */
 .main{
     overflow: hidden;
 }
 
-/* ======= header & nav ======== */
 .header{
     position: fixed;
     width: 100%;
@@ -284,12 +276,10 @@ body.dark-theme{
     box-shadow: 0 2px 8px hsla(19, 90%, 4%, 0.1);
 }
 
-/* Active link */
 .active-link{
     color: #398f1a;
 }
 
-/*=============== HOME ===============*/
 .home{
     position: relative;
 }
@@ -341,7 +331,7 @@ body.dark-theme{
     bottom: 1rem;
     transform: rotate(-15deg);
 }
-/*=============== BUTTON ===============*/
+
 .button{
     display: inline-flex;
     align-items: center;
@@ -353,7 +343,7 @@ body.dark-theme{
     font-weight: 500;
     transition: background .3s;
     box-shadow: 0 2px 9px rgba(26, 20, 69, 0.869),
-							0 0 0 1px rgba(11, 7, 23, 0.1);
+	        0 0 0 1px rgba(11, 7, 23, 0.1);
 }
 .button i{
     font-size: 1.5rem;
@@ -366,7 +356,6 @@ body.dark-theme{
     transform: translateX(.25rem);
 }
 
-/*=============== ABOUT ===============*/
 .about{
     position: relative;
 }
@@ -398,7 +387,6 @@ body.dark-theme{
     transform: rotate(-15deg);
 }
 
-/* =============== POPULAR =============== */
 .popular_container{
     padding-top: 4rem;
     grid-template-columns: 250px;
@@ -409,12 +397,11 @@ body.dark-theme{
     position: relative;
     background-color: #F5E8C7;
     padding: 7rem 2rem 1.5rem;
-    /* box-shadow: 0 10px 20px hsla(19, 65%, 7%, 0.08); */
     box-shadow: 0 1px 10px rgba(76, 97, 51, 0.869),
-							0 0 0 1px rgba(169, 225, 80, 0.1);
+		 0 0 0 1px rgba(169, 225, 80, 0.1);
     border-radius: 1rem;
     text-align: center;
-    transition: background .4s; /*for dark mode animation*/
+    transition: background .4s;
 }
 .popular_img{
     width: 220px;
@@ -462,8 +449,6 @@ body.dark-theme{
 .popular_card:hover{
     transform: translateY(-.25rem);
 }
-
-/* =============== RECENTLY =============== */
 .recently{
     position: relative;
 }
@@ -499,7 +484,6 @@ body.dark-theme{
     transform: rotate(-30deg);
 }
 
-/*=============== NEWSLETTER ===============*/
 .newsletter_container{
     position: relative;
 }
@@ -545,17 +529,14 @@ body.dark-theme{
 .newsletter_container,
 .newsletter_form,
 .newsletter_input{
-    transition: background .4s; /*for dark mode animation*/
+    transition: background .4s; 
 }
 
-/*=============== FOOTER ===============*/
 .footer{
     position: relative;
     padding-block: 3rem 2rem;
     overflow: hidden;
-
     margin-inline: 1.5rem;
-/* margin-left: 1rem; */
 }
 .footer_container{
     row-gap: 3rem;
@@ -589,7 +570,6 @@ body.dark-theme{
 .footer_content{
     grid-template-columns: repeat(2, max-content);
     gap: 2.5rem;
-
 }
 .footer_title{
     font-size: 1rem;
@@ -662,7 +642,7 @@ body.dark-theme{
 .footer_card img{
     width: 35px;
 }
-/*=============== SCROLL BAR ===============*/
+
 ::-webkit-scrollbar{
     width: .6rem;
     border-radius: .5rem;
@@ -676,14 +656,13 @@ body.dark-theme{
     background-color:#94a57b;
 }
 
-/*=============== SCROLL UP ===============*/
 .scrollup{
     position: fixed;
     right: 1rem;
     bottom: -50%;
     background-color:#e96f37;
     box-shadow: 0 2px 9px rgba(26, 20, 69, 0.869),
-							0 0 0 1px rgba(11, 7, 23, 0.1);
+				0 0 0 1px rgba(11, 7, 23, 0.1);
     display: inline-flex;
     padding: .35rem;
     border-radius: 50%;
@@ -696,13 +675,10 @@ body.dark-theme{
     transform: translateY(-.25rem);
 }
 
-/* Show Scroll Up */
 .show-scroll{
     bottom: 3rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 340px){
     .container{
         margin-inline:1rem ;
@@ -728,7 +704,6 @@ body.dark-theme{
     .about_leaf{
         bottom: 8rem;
     }
-    
     .newsletter_content{
         padding: 6rem 1rem 2rem;
     }
@@ -776,10 +751,8 @@ body.dark-theme{
     .footer_information{
         font-size: 10px;
     }
-
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px){
     .home_container,
     .about_container,
@@ -793,6 +766,7 @@ body.dark-theme{
         justify-content: center;
     }
 }
+
 @media screen and (min-width: 767px){
     .nav{
         column-gap: 3rem;
@@ -825,7 +799,6 @@ body.dark-theme{
     }
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px){
     .section{
         padding-block: 7rem 1.5rem;
@@ -948,7 +921,6 @@ body.dark-theme{
     .footer_container{
         position: relative;
         grid-template-columns: repeat(2, max-content);
-        /* justify-content: space-between; */
     }
     .footer_content{
         column-gap: 4rem;
@@ -980,11 +952,13 @@ body.dark-theme{
         right: 3rem;
     }
 }
+
 @media screen and (min-width:1064px) {
     .container{
         margin-inline: auto;
     }
 }
+
 @media screen and (min-width:1280px) {
     .home_leaf-1{
         width: 130px;
@@ -1003,21 +977,14 @@ body.dark-theme{
         width: 150px;
         top: 25rem;
     }
-    .recently_leaf-2{
-        
-        
-    }
     .recently_img{
         width: 1000px;
     }
     .footer_leaf-1{
         right: 0;
         left:20rem;
-        /* bottom: -15px; */
-        /* margin: 0 auto; */
         width: 150px;
     }
-    
 }
 
 
